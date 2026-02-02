@@ -1,0 +1,27 @@
+version: 0.0
+
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: arn:aws:ecs:us-east-1:763944546358:task-definition/sanjey-task:1
+        LoadBalancerInfo:
+          ContainerName: "test-1"
+          ContainerPort: 80
+        PlatformVersion: "LATEST"
+
+Hooks:
+  AfterAllowTestTraffic:
+    - location: scripts/after_test.sh
+      timeout: 300
+      runas: root
+
+  BeforeAllowTraffic:
+    - location: scripts/before_prod.sh
+      timeout: 300
+      runas: root
+
+  AfterAllowTraffic:
+    - location: scripts/after_prod.sh
+      timeout: 300
+      runas: root

@@ -1,0 +1,21 @@
+{
+  "family": "sanjey-task",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::763944546358:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "test-1",
+      "image": "763944546358.dkr.ecr.us-east-1.amazonaws.com/ecs:latest-image",
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true
+    }
+  ]
+}
