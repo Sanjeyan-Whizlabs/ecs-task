@@ -33,7 +33,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-400">
-              Hi, Engineer CBE.
+              Hi, Whizlabs.
             </span>
           </h2>
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
