@@ -33,11 +33,11 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-400">
-              Level Up Your Cloud Skills
+              hi updated
             </span>
           </h2>
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-            Master qwertyui. Earn XP, unlock achievements, and join thousands of engineers on their learning journey.
+            Master Earn XP, unlock achievements, and join thousands of engineers on their learning journey.
           </p>
           <div className="flex gap-4 justify-center">
             <button className="bg-gradient-to-r from-orange-500 to-pink-500 px-8 py-3 rounded-lg font-semibold text-white shadow-lg shadow-orange-500/30 hover:scale-105 transition">
